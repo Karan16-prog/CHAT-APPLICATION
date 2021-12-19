@@ -1,0 +1,129 @@
+main {
+  padding: 10px 10px 0px 10px;
+  height: 81vh;
+  margin: 0vh 0 0vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #236ab9;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+form button {
+  width: 20%;
+  background-color: #236ab9;
+  border-left: 0.5px solid black;
+}
+
+input {
+  line-height: 1.25rem;
+  width: 80%;
+  font-size: 1.25rem;
+  background: #236ab9;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 8px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+button {
+  background-color: #236ab9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: left;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+}
+.received p {
+  background: white;
+  color: black;
+}
+
+.reciever__name {
+  color: grey;
+  font-size: 12px;
+  text-align: right;
+}
+
+.back__button {
+  background-color: #236ab9;
+  position: sticky;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 3vh 1vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.received .time__stamp {
+  color: grey;
+}
+
+.sent .time__stamp {
+  color: black;
+}
+
+.time__stamp {
+  font-size: 12px;
+  text-align: right;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+}
