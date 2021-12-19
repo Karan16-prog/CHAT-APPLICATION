@@ -12,12 +12,12 @@ import Screen from './firstScreen';
 
 
 //React router used to link different chat rooms 
-
+//test
 function App() {
   const [user,setUser] = useState('ram');
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path='/'>
             <header> 
